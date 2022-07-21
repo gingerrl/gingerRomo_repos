@@ -3,3 +3,13 @@
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
     background-size: 20px;
   }
+
+  .searchPokemon{
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    margin-bottom: 10px;
+  }
+
+  .searchContainar{
+    width: 50%;
+  }

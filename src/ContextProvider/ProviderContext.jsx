@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { getPokemon,getPokemonName } from "../Api/api"
+import { getPokemon, getPokemonName } from "../Api/api"
 const PokemonContext = React.createContext()
 
 function ProviderContext({ children }) {
@@ -7,9 +7,9 @@ function ProviderContext({ children }) {
     const [pokemons, setPokemons] = useState([]);
     const [search, setSearch] = useState("");
     const [searchPokemon, setSearchPokemons] = useState([]);
-    const [selectPokemon, setSelectPokemon]= useState(null);
-    const [paginationPokemon, setPaginationPokemon] = useState([]);
-    const [pageSelected, setPageSelected] = useState(1);
+    const [selectPokemon, setSelectPokemon] = useState(null);
+    const [nextPokemon, setNextPokemon] = useState("");
+    const [previusPokemon, setPreviusPokemon] = useState("");
 
     useEffect(() => {
         setSearchPokemons(pokemons.filter(x => x.name.toUpperCase().includes(search.toUpperCase())))
@@ -23,6 +23,8 @@ function ProviderContext({ children }) {
         async function fetchPokemons() {
             const result = await getPokemon()
             setPokemons(result.results)
+            setNextPokemon(result.next)
+            setPreviusPokemon(result.previous)
         }
         fetchPokemons()
 
@@ -39,12 +41,11 @@ function ProviderContext({ children }) {
             search,
             setSelectPokemon,
             selectPokemon,
-            oculto,
-            setOculto,
-            paginationPokemon, 
-            setPaginationPokemon,
-            pageSelected, 
-            setPageSelected
+            nextPokemon,
+            previusPokemon,
+            setNextPokemon,
+            setPreviusPokemon
+
         }}
 
         >{children}</PokemonContext.Provider>

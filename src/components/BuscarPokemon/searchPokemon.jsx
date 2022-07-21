@@ -4,14 +4,12 @@ import usePokemon from '../../Hooks/usePokemon';
 function SearchPokemon() {
 
   const { setSearch, search } = usePokemon();
-  
-
   const handleSearch = (e) => {
     setSearch(e)
   }
   return (
-    <div>
-      <input onChange={(e) => handleSearch(e.target.value)} className='icon' placeholder='Buscar' />
+    <div className='searchContainar'>
+      <input onChange={(e) => handleSearch(e.target.value)} className='icon searchPokemon' placeholder='Buscar' />
     </div>
   );
 }

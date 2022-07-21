@@ -1,0 +1,28 @@
+.cuadro{
+    width: 160px;
+    height: 200px;;
+    padding:20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.imagenFondo{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px
+}
+
+.listContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.item1{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,46 @@
+.cuadroPokemon{
+    width: 235px;
+    margin:10px 50px;
+    padding:20px;
+    text-align: start;
+}
+
+.textPokemon{
+    margin-left: 25px;
+    text-align: justify;
+}
+.spritesText{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.textNegrita{
+    font-weight: bold;
+}
+.movesText{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #111111;
+    text-transform: capitalize; 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+   
+}
+.imagenPokemon{
+    width: 47%;
+    height: 120px;
+    margin-left: 65px;
+}
+
+.spritesImage{
+    width: 45px;
+    height: 60px;
+}
+
+.centerText{
+    text-align: center;
+}

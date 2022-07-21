@@ -1,0 +1,31 @@
+.contenedor {
+    padding: 20px;
+}
+  
+.item-titulo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+}
+  
+.item-buscador {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.modalPokemon {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

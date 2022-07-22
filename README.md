@@ -1,4 +1,3 @@
 # gingerRomo_repos
 
-Ejecutar proyecto
-npm run dev
+#Ejecutar proyecto                                                                                                                                                       npm run dev
